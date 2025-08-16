@@ -19,6 +19,37 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.bg-primary {
+  background-color: #0d6efd !important;
+}
+
+.card {
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+#skills .card {
+  height: 100%;
+}
+
+#resources .card {
+  height: 100%;
+}
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
