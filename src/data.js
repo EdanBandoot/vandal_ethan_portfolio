@@ -18,18 +18,19 @@ export const portfolioData = {
         "Implement SQL queries and database schemas to manage product listings and user accounts",
         "Collaborate with frontend and design teams using Git for version control and Agile development practices"
       ],
-      tech: ["Node.js", "Express", "SQL", "Git", "Agile"]
+      tech: ["Node.js", "Express", "SQL", "Git", "Agile"],
+      link: "https://kurb.online/"
     },
     {
       id: 2,
-      title: "Standardized Patient",
-      company: "Faculty of Health Sciences University of Manitoba",
-      period: "November 2016 - Present",
+      title: "Printing Press Operator",
+      company: "Epak",
+      period: "December 2023 - August 2024",
       description: [
-        "Served as a standardized patient, collaborating with medical educators to simulate real-world scenarios",
-        "Demonstrated attention to detail, in-depth memorization, adaptability, and effective communication skills"
+        "Operated and maintained industrial printing press systems",
+        "Troubleshot mechanical and software-controlled workflows"
       ]
-    },
+    }
   ],
   education: {
     institution: "Red River College Polytechnic",
@@ -51,9 +52,15 @@ export const portfolioData = {
       title: "Fashion Aggregation Platform",
       description: "Backend development for kurb.online fashion platform",
       tech: ["Node.js", "Express", "SQL"],
-      link: "#"
+      link: "https://kurb.online/"
     },
-    // Add other projects
+    {
+      id: 2,
+      title: "Portfolio Website",
+      description: "My personal portfolio website built with React",
+      tech: ["React", "Bootstrap", "Docker"],
+      link: "https://github.com/EdanBandoot/vandal_ethan_portfolio"
+    }
   ],
   resources: [
     {
@@ -61,7 +68,14 @@ export const portfolioData = {
       title: "GitHub Profile",
       icon: "github",
       summary: "Check out my coding projects and contributions",
-      link: "#"
+      link: "https://github.com/EdanBandoot"
     },
+    {
+      id: 2,
+      title: "Kurb.online",
+      icon: "globe",
+      summary: "Fashion platform I contributed to",
+      link: "https://kurb.online/"
+    }
   ]
 };

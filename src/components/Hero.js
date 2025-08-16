@@ -1,5 +1,4 @@
 import React from 'react';
-
 import { Container, Button } from 'react-bootstrap';
 
 const Hero = ({ name, title, about }) => {
@@ -9,7 +8,13 @@ const Hero = ({ name, title, about }) => {
         <h1>{name}</h1>
         <h2>{title}</h2>
         <p className="lead">{about}</p>
-        <Button variant="light" className="mt-3">View My Work</Button>
+        <Button
+          variant="light"
+          className="mt-3"
+          href="https://github.com/EdanBandoot"
+        >
+          View My Work
+        </Button>
       </Container>
     </div>
   );

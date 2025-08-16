@@ -20,7 +20,14 @@ const Projects = ({ projects }) => {
                       </span>
                     ))}
                   </div>
-                  <Button variant="primary" href={project.link}>View Project</Button>
+                  <Button
+                    variant="primary"
+                    href={project.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    View Project
+                  </Button>
                 </Card.Body>
               </Card>
             </Col>

@@ -13,11 +13,15 @@ const Header = ({ contact }) => {
           <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
             <Navbar.Text className="mx-3">
               <FontAwesomeIcon icon={faPhone} className="me-2" />
-              {contact.phone}
+              <a href={`tel:${contact.phone}`} className="text-white text-decoration-none">
+                {contact.phone}
+              </a>
             </Navbar.Text>
             <Navbar.Text>
               <FontAwesomeIcon icon={faEnvelope} className="me-2" />
-              {contact.email}
+              <a href={`mailto:${contact.email}`} className="text-white text-decoration-none">
+                {contact.email}
+              </a>
             </Navbar.Text>
           </Navbar.Collapse>
         </Container>

@@ -9,7 +9,21 @@ const WorkExperience = ({ experiences }) => {
         {experiences.map((exp) => (
           <Card key={exp.id} className="mb-4">
             <Card.Body>
-              <Card.Title>{exp.title} - {exp.company}</Card.Title>
+              <Card.Title>
+                {exp.title} -
+                {exp.link ? (
+                  <a
+                    href={exp.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-decoration-none ms-2"
+                  >
+                    {exp.company}
+                  </a>
+                ) : (
+                  <span className="ms-2">{exp.company}</span>
+                )}
+              </Card.Title>
               <Card.Subtitle className="mb-2 text-muted">{exp.period}</Card.Subtitle>
               <ListGroup variant="flush">
                 {exp.description.map((item, index) => (

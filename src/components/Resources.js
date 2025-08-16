@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faGlobe } from '@fortawesome/free-brands-svg-icons';
 
 const Resources = ({ resources }) => {
   const getIcon = (iconName) => {
@@ -10,6 +10,8 @@ const Resources = ({ resources }) => {
         return faGithub;
       case 'linkedin':
         return faLinkedin;
+      case 'globe':
+        return faGlobe;
       default:
         return faGithub;
     }
@@ -31,7 +33,14 @@ const Resources = ({ resources }) => {
                   />
                   <Card.Title>{resource.title}</Card.Title>
                   <Card.Text>{resource.summary}</Card.Text>
-                  <a href={resource.link} className="btn btn-primary">Visit</a>
+                  <a
+                    href={resource.link}
+                    className="btn btn-primary"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Visit
+                  </a>
                 </Card.Body>
               </Card>
             </Col>
