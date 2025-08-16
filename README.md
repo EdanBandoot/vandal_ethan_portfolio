@@ -1,6 +1,6 @@
 # Ethan Vandal Portfolio Site
 
-This is a professional portfolio website for Ethan Vandal, built with React and Bootstrap, and containerized with Docker.
+This is a professional portfolio website, built with React and Bootstrap, and containerized with Docker.
 
 ## Getting Started
 
