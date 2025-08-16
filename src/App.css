@@ -67,3 +67,10 @@ section {
     transform: rotate(360deg);
   }
 }
+.hero-section {
+  padding: 4rem 0;
+}
+
+.bg-primary {
+  background-color: #0d6efd !important;
+}
